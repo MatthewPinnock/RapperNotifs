@@ -1,1 +1,1 @@
-"# RapperNotifs" 
+RapperNotifs is a minimalist Python desktop application that delivers inspirational quotes from rappers, authors, and philosophers directly to your desktop at random intervals between 30 to 45 minutes. It's designed to provide periodic motivation and reflection throughout your day.
