@@ -1,14 +1,25 @@
 #Rapper Notifs
 import time
-from plyer import notification as noti # type: ignore
+from win10toast_click import ToastNotifier
 
-def showNoti(title, message):
-    noti.notify(
-        title=title,
-        message=message,
-        timeout=10,
-        app_icon='C:/Users/matth/Projects/RapperNotifs/images/Earl.ico',
-    )
+def on_click():
+    print("Notification clicked")
+
+t = ToastNotifier()
+
+def showNoti():
+    while True:
+        t.show_toast(
+            title="Earl",
+            msg="State to state for the profit",
+            icon_path=r"C:/Users/matth/Projects/RapperNotifs/images/Earl2.ico",
+            duration=10,
+            callback_on_click=on_click,
+            threaded=False,
+        )
+
+
+
 
 if __name__ == '__main__':
-    showNoti("Earl", """State to state for the profit""")
+    showNoti()
